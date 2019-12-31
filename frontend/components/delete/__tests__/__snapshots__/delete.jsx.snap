@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Delete /> Renders correctly 1`] = `
+<div
+  className="css-m4qxtz"
+>
+  <h1>
+    Delete
+  </h1>
+  <form>
+    <input
+      name="id"
+      onChange={[Function]}
+      placeholder="id"
+      type="text"
+      value=""
+    />
+    <input
+      onClick={[Function]}
+      type="button"
+      value="delete"
+    />
+  </form>
+</div>
+`;

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navigation /> renders correctly 1`] = `
+<ul
+  className="css-13b5cob"
+>
+  <li>
+    <a
+      className="menu"
+      href="/add"
+      onClick={[Function]}
+    >
+      add
+    </a>
+  </li>
+  <li>
+    <a
+      className="menu"
+      href="/delete"
+      onClick={[Function]}
+    >
+      delete
+    </a>
+  </li>
+  <li>
+    <a
+      className="menu"
+      href="/update"
+      onClick={[Function]}
+    >
+      update
+    </a>
+  </li>
+  <li>
+    <a
+      className="menu"
+      href="/all"
+      onClick={[Function]}
+    >
+      all
+    </a>
+  </li>
+  <li>
+    <a
+      className="menu"
+      href="/select"
+      onClick={[Function]}
+    >
+      select
+    </a>
+  </li>
+</ul>
+`;

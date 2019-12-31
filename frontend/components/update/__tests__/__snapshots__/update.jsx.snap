@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Update /> Renders correctly 1`] = `
+<div
+  className="css-1ht9v15"
+>
+  <h1>
+    Update
+  </h1>
+  <form>
+    <input
+      name="id"
+      onChange={[Function]}
+      placeholder="id"
+      type="text"
+      value=""
+    />
+    <input
+      name="name"
+      onChange={[Function]}
+      placeholder="name"
+      type="text"
+      value=""
+    />
+    <input
+      name="password"
+      onChange={[Function]}
+      placeholder="password"
+      type="password"
+      value=""
+    />
+    <input
+      onClick={[Function]}
+      type="button"
+      value="update"
+    />
+  </form>
+</div>
+`;
