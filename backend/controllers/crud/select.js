@@ -1,5 +1,5 @@
 import { users } from '../../models/data.json';
-import { find } from '../../utils/helperFunction';
+import { find } from '../../../utils/helperFunction';
 
 const select = ({ params: { id } }, res) => {
   const data = find(users, parseInt(id));

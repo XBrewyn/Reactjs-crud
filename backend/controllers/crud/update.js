@@ -1,5 +1,5 @@
 import { users } from '../../models/data.json';
-import { find } from '../../utils/helperFunction';
+import { find } from '../../../utils/helperFunction';
 
 const updateUser = (data, id) => {
   Object.entries(data).forEach(([key, value]) => {

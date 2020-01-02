@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { validation } from '../../utils/helperFunction';
+import { validation } from '../../../utils/helperFunction';
 import { input } from './data';
 import Container from './css';
 
