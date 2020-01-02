@@ -7,7 +7,7 @@ const updateUser = (data, id) => {
   });
 };
 
-module.exports = (req, res) => {
+const update = (req, res) => {
   const data = find(users, parseInt(req.params.id));
   const { user } = data;
 
@@ -21,3 +21,5 @@ module.exports = (req, res) => {
     res.status(404).send({ message: 'The username does not exist' });
   }
 };
+
+export default update;

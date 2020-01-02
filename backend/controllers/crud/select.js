@@ -1,7 +1,7 @@
 import { users } from '../../models/data.json';
 import { find } from '../../utils/helperFunction';
 
-module.exports = ({ params: { id } }, res) => {
+const select = ({ params: { id } }, res) => {
   const data = find(users, parseInt(id));
   const { user } = data;
 
@@ -11,3 +11,5 @@ module.exports = ({ params: { id } }, res) => {
     res.status(404).send({ message: 'The username does not exist' });
   }
 };
+
+export default select;

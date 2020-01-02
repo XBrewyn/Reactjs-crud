@@ -1,6 +1,6 @@
 import { users } from '../../models/data.json';
 
-module.exports = (req, res) => {
+const add = (req, res) => {
   const id = users.length;
   const addUser = { id, ...req.body };
   const validation = req.body.name && req.body.password;
@@ -15,3 +15,5 @@ module.exports = (req, res) => {
     res.status(404).send({ message: 'The username was not added.' });
   }
 };
+
+export default add;

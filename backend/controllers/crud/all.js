@@ -1,6 +1,6 @@
 import { users } from '../../models/data.json';
 
-module.exports = (req, res) => {
+const all = (req, res) => {
   const validation = users.length > 0;
 
   if (validation) {
@@ -9,3 +9,5 @@ module.exports = (req, res) => {
     res.status(404).send({ message: 'There are not username avalible.' });
   }
 };
+
+export default all;
