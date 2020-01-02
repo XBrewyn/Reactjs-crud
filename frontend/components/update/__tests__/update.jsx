@@ -1,6 +1,6 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-import Update from '../update';
+import Update from '..';
 
 describe('<Update />', () => {
   it('Renders correctly', () => {

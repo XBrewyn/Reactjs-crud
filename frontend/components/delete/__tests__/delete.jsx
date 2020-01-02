@@ -1,6 +1,6 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-import Homepage from '../delete';
+import Homepage from '..';
 
 describe('<Delete />', () => {
   it('Renders correctly', () => {

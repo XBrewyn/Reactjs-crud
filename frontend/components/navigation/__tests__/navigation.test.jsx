@@ -1,6 +1,6 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-import Navigation from '../navigation';
+import Navigation from '..';
 
 describe('<Navigation />', () => {
   it('renders correctly', () => {

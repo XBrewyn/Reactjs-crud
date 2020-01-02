@@ -1,10 +1,10 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-import Homepage from '../add';
+import Add from '..';
 
 describe('<Add />', () => {
   it('Renders correctly', () => {
-    const component = create(<Homepage />).toJSON();
+    const component = create(<Add />).toJSON();
     expect(component).toMatchSnapshot();
   });
 });
