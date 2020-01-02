@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from './css';
 
-const error404 = () => (
+const Error404 = () => (
   <Container>
     <div className="sketch">
       <div className="bee-sketch red"></div>
@@ -15,4 +15,4 @@ const error404 = () => (
   </Container>
 );
 
-export default error404;
+export default Error404;

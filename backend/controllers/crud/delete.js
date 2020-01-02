@@ -1,5 +1,5 @@
-const { users } = require('../../models/data.json');
-const { find } = require('../../utils/helperFunction');
+import { users } from '../../models/data.json';
+import { find } from '../../utils/helperFunction';
 
 module.exports = (req, res) => {
   const data = find(users, parseInt(req.params.id));

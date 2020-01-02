@@ -1,9 +1,9 @@
-const { users } = require('../../models/data.json');
-const { find } = require('../../utils/helperFunction');
+import { users } from '../../models/data.json';
+import { find } from '../../utils/helperFunction';
 
 const updateUser = (data, id) => {
   Object.entries(data).forEach(([key, value]) => {
-    users[id][key] = value;
+    if (value) users[id][key] = value;
   });
 };
 

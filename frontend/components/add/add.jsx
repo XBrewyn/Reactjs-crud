@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { validation } from '../../utils/helperFunction';
 import { input } from './data';
 import Container from './css';
 
 const Add = () => {
   const [inputValue, setInputValue] = useState({ name: '', password: '' });
+
+  useEffect(() => {
+    document.title = 'Add';
+  }, []);
 
   const handlerOnChange = ({ target: { value, name } }) => {
     setInputValue({ ...inputValue, [name]: validation(name, value) });

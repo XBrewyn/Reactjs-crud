@@ -1,4 +1,4 @@
-const { find } = require('./helperFunction');
+import { find } from './helperFunction';
 
 describe('utils backend', () => {
   it('find - should return an object', () => {

@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { validation } from '../../utils/helperFunction';
 import { input } from './data';
 import Container from './css';
 
-const Add = () => {
+const Delete = () => {
   const [id, setId] = useState('');
+
+  useEffect(() => {
+    document.title = 'Delete';
+  }, []);
 
   const handlerOnChange = ({ target: { value, name } }) =>
     setId(validation([name, 'id'], value, false));
@@ -49,4 +53,4 @@ const Add = () => {
   );
 };
 
-export default Add;
+export default Delete;

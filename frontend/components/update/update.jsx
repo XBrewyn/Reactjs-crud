@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { validation } from '../../utils/helperFunction';
 import Container from './css';
 import { input } from './data';
@@ -6,6 +6,10 @@ import { input } from './data';
 const Update = () => {
   const [inputValue, setInputValue] = useState({ name: '', password: '' });
   const [id, setId] = useState('');
+
+  useEffect(() => {
+    document.title = 'Update';
+  }, []);
 
   const handlerOnChange = ({ target: { value, name } }) => {
     if (name === 'id') {

@@ -2,7 +2,7 @@
 
 exports[`<Navigation /> renders correctly 1`] = `
 <ul
-  className="css-13b5cob"
+  className="css-1qdfi62"
 >
   <li>
     <a

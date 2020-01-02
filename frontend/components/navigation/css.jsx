@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 const Container = styled.ul`
   background: black;
-  border-bottom: solid 1px white;
   padding: 20px;
   position: sticky;
   text-align: right;
@@ -23,10 +22,6 @@ const Container = styled.ul`
     color: white;
     transition: color 0.5s ease;
     text-decoration: none;
-
-    &:hover {
-      color: red;
-    }
   }
 `;
 

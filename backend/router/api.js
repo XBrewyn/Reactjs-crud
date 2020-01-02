@@ -1,9 +1,9 @@
-const express = require('express');
-const all = require('../controllers/crud/all');
-const select = require('../controllers/crud/select');
-const del = require('../controllers/crud/delete');
-const add = require('../controllers/crud/add');
-const update = require('../controllers/crud/update');
+import express from 'express';
+import all from '../controllers/crud/all';
+import select from '../controllers/crud/select';
+import del from '../controllers/crud/delete';
+import add from '../controllers/crud/add';
+import update from '../controllers/crud/update';
 
 const router = express.Router();
 
@@ -13,4 +13,4 @@ router.post('/user/add', add);
 router.delete('/user/delete/:id', del);
 router.put('/user/update/:id', update);
 
-module.exports = router;
+export default router;

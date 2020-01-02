@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Router } from '@reach/router';
 import loadable from 'react-loadable';
 
 const LoadableNavigation = loadable({
@@ -45,16 +45,17 @@ const LoadableError404 = loadable({
 });
 
 const App = () => (
-  <Router>
+  <>
     <LoadableNavigation />
-    <Switch>
-      <Route path={['/add', '/']} component={LoadableAdd} exact />
-      <Route path="/all" component={LoadableAll} />
-      <Route path="/delete" component={LoadableDelete} />
-      <Route path="/update" component={LoadableUpdate} />
-      <Route component={LoadableError404} />
-    </Switch>
-  </Router>
+    <Router>
+      <LoadableAdd path="/" />
+      <LoadableAdd path="/add" />
+      <LoadableAll path="all" />
+      <LoadableDelete path="delete" />
+      <LoadableUpdate path="update" />
+      <LoadableError404 default />
+    </Router>
+  </>
 );
 
 export default App;

@@ -4,8 +4,9 @@ import { connect } from 'react-redux';
 import Container from './css';
 import { actionUser } from '../../redux/actionCreator/user';
 
-const Users = ({ getUsers, users }) => {
+const All = ({ getUsers, users }) => {
   useEffect(() => {
+    document.title = 'All';
     fetch('api/user')
       .then(data => data.json())
       .then(data => getUsers(data));
@@ -46,9 +47,9 @@ const mapStateToDispatch = dispatch => ({
   },
 });
 
-Users.propTypes = {
+All.propTypes = {
   users: PropTypes.array.isRequired,
   getUsers: PropTypes.func.isRequired,
 };
 
-export default connect(mapStateToProps, mapStateToDispatch)(Users);
+export default connect(mapStateToProps, mapStateToDispatch)(All);

@@ -1,4 +1,4 @@
-const { users } = require('../../models/data.json');
+import { users } from '../../models/data.json';
 
 module.exports = (req, res) => {
   const validation = users.length > 0;

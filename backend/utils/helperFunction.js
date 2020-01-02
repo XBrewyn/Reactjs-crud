@@ -1,4 +1,4 @@
-exports.find = (data, id) => {
+export const find = (data, id) => {
   let res = {};
 
   data.forEach((elem, i) => {
