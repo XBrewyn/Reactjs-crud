@@ -35,22 +35,14 @@ if (enviroment === 'development') {
 // Router
 app.use('/api', api);
 app.use((req, res) => {
-  res.write(parts[0]);
-
   const reactMarkup = (
     <ServerLocation url={req.url}>
       <App />
     </ServerLocation>
   );
 
-  const stream = renderToNodeStream(reactMarkup);
-
-  stream.pipe(res, { end: false });
-
-  stream.on('end', () => {
-    res.write(parts[1]);
-    res.end();
-  });
+  res.send(`${parts[0]}${renderToNodeStream(reactMarkup)}${parts[1]}`);
+  res.end();
 });
 
 app.listen(port, () =>
