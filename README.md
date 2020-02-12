@@ -6,6 +6,7 @@
 ## Tecnologies
 
 - [Reactjs](https://reactjs.org/) 
+- [Jest](https://jestjs.io/docs/en/getting-started)
 - [Express](https://expressjs.com/en/guide/routing.html)
 - [Emotion](https://emotion.sh/docs/introduction)
 - [React-loadable](https://github.com/jamiebuilds/react-loadable)
