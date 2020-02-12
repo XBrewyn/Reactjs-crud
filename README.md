@@ -5,9 +5,7 @@
  ![npm package version](https://img.shields.io/badge/npm%20package->=10.16.3-green)
 ## Tecnologies
 
-- [Nodejs](https://github.com/nvm-sh/nvm)
 - [Reactjs](https://reactjs.org/) 
-- [Jest](https://jestjs.io/docs/en/using-matchers)
 - [Express](https://expressjs.com/en/guide/routing.html)
 - [Emotion](https://emotion.sh/docs/introduction)
 - [React-loadable](https://github.com/jamiebuilds/react-loadable)
